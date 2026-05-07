@@ -6,6 +6,20 @@
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" type="image/png" href="favicon.png">
   <title>724PazarYeri</title>
+  <script>
+    (function () {
+      var host = window.location.hostname;
+      var isSourceHost = host === '724pazaryeri.com' || host === 'www.724pazaryeri.com';
+      if (!isSourceHost) return;
+
+      var mobilePattern = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+      var isMobile = mobilePattern.test(navigator.userAgent || '');
+      if (!isMobile) return;
+
+      var target = 'https://web.724pazaryeri.com' + window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
   <meta name="google-signin-client_id" content="412823237422-b8qlfuhetki7tkr58a9jdfla1da0uji7.apps.googleusercontent.com">
   <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js"
     defer></script>
