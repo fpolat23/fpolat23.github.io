@@ -1,0 +1,12 @@
+# Flutter build artifacts
+main.dart.js*
+flutter_bootstrap.js
+.last_build_id
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
